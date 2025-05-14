@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	table {
+		width: 200px;
+		height: 150px;
+	}
+	table, tr, td {
+		border: 1px groove black;
+	}
+</style>
+<script>
+	window.onload = function() {
+//		let tags = document.getElementsByTagName("td")
+//		tags[0].innerHTML = '아이디'
+		
+		// id를 찾아서 값을 아이디로 변경
+		let idTag = document.getElementById("id")
+		idTag.innerHTML = '아이디'
+		
+		// 클래스 이름이 pwd인 것을 찾아서 값을 패스워드로 변경 
+		document.getElementsByClassName("pwd")[0].innerText = '패스워드'
+	}
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td id="id">ID</td>
+		</tr>
+		<tr>
+			<td class="pwd">PASSWORD</td>
+		</tr>
+	</table>
+</body>
+</html>
